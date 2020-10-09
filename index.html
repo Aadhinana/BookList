@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OOPS Books List</title>
+    <!-- Skeleton CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+      integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Book List</h1>
+      <form id="form">
+        <label for="title">Title</label>
+        <input type="text" name="title" id="title" class="u-full-width" />
+        <label for="author">Author</label>
+        <input type="text" name="author" id="author" class="u-full-width" />
+        <label for="title">ID</label>
+        <input type="text" name="id" id="id" class="u-full-width" />
+        <button type="submit" id="add-button" class="u-full-width">ADD</button>
+      </form>
+      <hr />
+      <table class="u-full-width">
+        <thead>
+          <th>Name</th>
+          <th>Author</th>
+          <th>ID</th>
+          <th></th>
+        </thead>
+        <tbody id="book-list"></tbody>
+      </table>
+    </div>
+    <!-- App script -->
+    <script src="appClass.js" defer></script>
+  </body>
+</html>
